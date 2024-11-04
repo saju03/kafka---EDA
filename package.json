@@ -1,0 +1,19 @@
+{
+  "name": "micro-services-event-driven",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"nodemon src/notification-service/index.js\"  \" nodemon src/user-service/index.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.1.0",
+    "express": "^4.21.1",
+    "kafkajs": "^2.2.4",
+    "nodemon": "^3.1.7"
+  }
+}
